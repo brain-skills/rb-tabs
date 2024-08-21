@@ -1,0 +1,121 @@
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    border: 1px solid #999;
+}
+
+.toggle-switch label::before {
+    content: 'Monthly';
+    font-size: 14px;
+    position: absolute;
+    left: 14px;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.toggle-switch label::after {
+    content: 'Annually';
+    font-size: 14px;
+    position: absolute;
+    right: 14px;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.toggle-switch input:checked + label {
+    background-color: #ccc;
+}
+
+.toggle-switch input:checked + label::before {
+}
+
+.toggle-switch input:checked + label::after {
+    color: #fff;
+}
+
+.toggle-switch span {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: left 0.3s ease;
+    left: 0;
+}
+
+.toggle-switch input:checked + label span {
+    left: 50%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+.card-container .card {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Space between cards */
+    min-width: 250px; /* Minimum width for each card */
+}
+.card-img-top {
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+}
+/* Hide scrollbar for Webkit browsers (e.g., Chrome) */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+.price {
+    padding: 5px 10px;
+    border: 1px dashed #888;
+    border-radius: 4px;
+}
+
+.tab-pane {
+    display: none; /* Скрываем контент по умолчанию */
+    opacity: 0;
+    transition: opacity 0s; /* Убираем задержку */
+}
+
+.tab-pane.active {
+    display: block !important;
+    opacity: 1;
+}
+
+.card-animate {
+    opacity: 0;
+    transform: translateY(20px); /* Начальная позиция карточки ниже */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.tab-pane.show .card-animate {
+    opacity: 1;
+    transform: translateY(0); /* Конечная позиция карточки */
+}
+
+.animate__animated {
+    --animate-duration: 0.3s !important;
+}

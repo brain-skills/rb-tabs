@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tabs v.0.0.0.2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <!-- Переключатель цен -->
+        <div class="toggle-switch text-center">
+            <input type="checkbox" id="price-toggle-checkbox">
+            <label for="price-toggle-checkbox">
+                <span></span>
+            </label>
+        </div>
+
+        <!-- Табы -->
+        <ul class="nav nav-tabs" id="pricingTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1" data-bs-toggle="tab" data-bs-target="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Визитки/Лендинги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2" data-bs-toggle="tab" data-bs-target="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Корпоративные сайты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-3-tab" data-toggle="tab" href="#tab-3" data-bs-toggle="tab" data-bs-target="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Интернет магазины</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-4-tab" data-toggle="tab" href="#tab-4" data-bs-toggle="tab" data-bs-target="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">Доски объявлений</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-5-tab" data-toggle="tab" href="#tab-5" data-bs-toggle="tab" data-bs-target="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">Прочие платформы</a>
+            </li>
+        </ul>
+
+        <!-- Контент табов -->
+        <div class="tab-content mt-4" id="pricingTabsContent">
+            <!-- Вкладка 1 -->
+            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Start</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Одностраничный сайт</p>
+                                <p class="mb-0">- Простая форма обратной связи</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="100" data-yearly="1000">$100 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Standard</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Одностраничный сайт с более сложным макетом</p>
+                                <p class="mb-0">- Интерактивная форма обратной связи с проверкой данных</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="200" data-yearly="2000">$200 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Business</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Многостраничный сайт с использованием Bootstrap</p>
+                                <p class="mb-0">- Формы обратной связи с AJAX валидацией</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="300" data-yearly="3000">$300 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Premium</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Многостраничный сайт с индивидуальным дизайном</p>
+                                <p class="mb-0">- Полная интеграция с внешними API (например, CRM)</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="400" data-yearly="4000">$400 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="card-title mb-3">Общее для всех Визиток и Лендингов:</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Адаптивный дизайн для мобильных устройств</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация скорости загрузки</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Настройка SSL сертификата</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Развертывание на хостинге</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка 2 -->
+            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Start</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Многостраничный сайт с базовой структурой (до 5 страниц)</p>
+                                <p class="mb-0">- Корпоративный стиль и брендирование</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="100" data-yearly="1000">$100 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Standard</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Многостраничный сайт с гибкой архитектурой (до 10 страниц)</p>
+                                <p class="mb-0">- Внедрение базовых интерактивных элементов (слайдеры, всплывающие окна)</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="200" data-yearly="2000">$200 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Business</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Многостраничный сайт с уникальным дизайном и сложной архитектурой</p>
+                                <p class="mb-0">- Интерактивные элементы с использованием современных технологий</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="300" data-yearly="3000">$300 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Premium</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Индивидуальная архитектура сайта с микросервисами</p>
+                                <p class="mb-0">- Разработка и настройка CI/CD процессов</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="400" data-yearly="4000">$400 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="card-title mb-3">Общее для всех Корпоративных сайтов:</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Настройка безопасности (защита от XSS, CSRF)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Подключение к корпоративному почтовому серверу</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация базы данных</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Реализация системы контроля версий для сайта</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка 3 -->
+            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Start</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Интернет-магазин с базовым функционалом</p>
+                                <p class="mb-0">- До 50 товаров</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="100" data-yearly="1000">$100 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Standard</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Интернет-магазин с расширенным функционалом</p>
+                                <p class="mb-0">- До 200 товаров</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="200" data-yearly="2000">$200 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Business</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Неограниченное количество товаров</p>
+                                <p class="mb-0">- Интеграция с системами учета запасов</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="300" data-yearly="3000">$300 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Premium</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Высоконагруженные решения с кластеризацией серверов</p>
+                                <p class="mb-0">- Разработка и настройка контейнеризации (Docker)</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="400" data-yearly="4000">$400 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="card-title mb-3">Общее для всех Интернет магазинов:</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Простая корзина и оформление заказа</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация базы данных для работы с товарами</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Интеграция с платежными системами</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Поддержка масштабируемой архитектуры</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка 4 -->
+            <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Start</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Базовая доска объявлений</p>
+                                <p class="mb-0">- Возможность размещения объявлений пользователями</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="100" data-yearly="1000">$100 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Standard</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Поддержка категорий и фильтров для объявлений</p>
+                                <p class="mb-0">- Разработка системы уведомлений и подписок</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="200" data-yearly="2000">$200 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Business</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Разработка и внедрение сложных алгоритмов поиска</p>
+                                <p class="mb-0">- Высоконагруженная оптимизация базы данных</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="300" data-yearly="3000">$300 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Premium</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Полная интеграция с внешними системами</p>
+                                <p class="mb-0">- Разработка и настройка микросервисов для различных функциональностей</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="400" data-yearly="4000">$400 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="card-title mb-3">Общее для всех Досок объявлений:</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Настройка системы модерации контента</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Интеграция с внешними API (например, геолокация)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Настройка кэширования для ускорения загрузки</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Настройка отказоустойчивости и резервного копирования данных</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладка 5 -->
+            <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5-tab">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Start</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Базовая платформа (форум, блог и т.д.)</p>
+                                <p class="mb-0">- Настройка базовой структуры данных</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="100" data-yearly="1000">$100 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Standard</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Платформа с расширенным функционалом</p>
+                                <p class="mb-0">- Разработка пользовательских ролей и прав доступа</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="200" data-yearly="2000">$200 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Business</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Поддержка сложных сценариев взаимодействия (форумы, чаты, блоги)</p>
+                                <p class="mb-0">- Оптимизация и настройка микросервисной архитектуры</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="300" data-yearly="3000">$300 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 animate__animated animate__pulse">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Premium</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-0">- Поддержка высокой производительности и масштабируемости</p>
+                                <p class="mb-0">- Разработка и настройка контейнеризации и оркестрации (Kubernetes)</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price float-start" data-monthly="400" data-yearly="4000">$400 / месяц</span>
+                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="card-title mb-3">Общее для всех Платформ:</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Адаптивный дизайн</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация скорости загрузки</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Развертывание на хостинге</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Интеграция с внешними сервисами (API, социальные сети)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="alert alert-success py-2" role="alert">
+                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
