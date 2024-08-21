@@ -13,8 +13,9 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 150px;
-    height: 40px;
+    width: 160px;
+    height: 30px;
+    line-height: 24px;
     background-color: #ccc;
     border-radius: 20px;
     position: relative;
@@ -118,4 +119,9 @@ html {
 
 .animate__animated {
     --animate-duration: 0.3s !important;
+}
+
+.container {
+    width: calc(100% + 10%);
+    max-width: 80%;
 }
