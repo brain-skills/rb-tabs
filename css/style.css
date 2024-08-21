@@ -23,7 +23,7 @@
 }
 
 .toggle-switch label::before {
-    content: 'Monthly';
+    content: 'Yearly';
     font-size: 14px;
     position: absolute;
     left: 14px;
@@ -32,7 +32,7 @@
 }
 
 .toggle-switch label::after {
-    content: 'Annually';
+    content: 'Forever';
     font-size: 14px;
     position: absolute;
     right: 14px;
