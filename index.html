@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Bootstrap Tabs v.0.0.0.4</title>
+    <title>Responsive Bootstrap Tabs v.0.0.0.5</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -44,47 +44,53 @@
             <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Start</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Визитка</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="300" data-forever="800">$150</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Одностраничный сайт</p>
-                                <p class="mb-0">- Простая форма обратной связи</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="300" data-forever="800">$150 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Standard</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Одностраничный сайт с более сложным макетом</p>
-                                <p class="mb-0">- Форма обратной связи с проверкой данных</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="200" data-forever="700">$200 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Базовый функционал и макет</li>
+                                    <li>До 10 страниц</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Business</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Landing</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="200" data-forever="700">$200</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Многостраничный сайт с индивидуальным дизайном</p>
-                                <p class="mb-0">- Формы обратной связи с AJAX валидацией</p>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Расширенный функционал и макет</li>
+                                    <li>1 страница</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="200" data-forever="800">$200 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Portfolio</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="200" data-forever="800">$200</span>
+                                </h1>
+                            </div>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Бизнес функционал и макет</li>
+                                    <li>До 10 страниц + Портфолио</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
@@ -92,33 +98,33 @@
                         <h4 class="card-title mb-3">Общее для всех Визиток и Лендингов:</h4>
                         <div class="row">
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Адаптивный дизайн для мобильных устройств</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Адаптивный дизайн для мобильных устройств</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация скорости загрузки</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация скорости загрузки</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Настройка SSL сертификата</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Настройка SSL сертификата</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Развертывание на хостинге</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Развертывание на хостинге</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация и минификация кода (HTML, CSS, JS)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Использование системы управления контентом (CMS)</p>
                                 </div>
                             </div>
                         </div>
@@ -130,47 +136,53 @@
             <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Start</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Start</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="300" data-forever="1000">$300</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Многостраничный сайт с базовой структурой</p>
-                                <p class="mb-0">- Корпоративный стиль и брендирование</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="300" data-forever="1000">$300 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Standard</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Многостраничный сайт с гибкой архитектурой</p>
-                                <p class="mb-0">- Базовые интерактивные элементы</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="300" data-forever="1200">$300 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Многостраничный сайт с базовой структурой</li>
+                                    <li>Корпоративный стиль и брендирование</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Business</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Standard</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="300" data-forever="1200">$300</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Многостраничный сайт с уникальным дизайном</p>
-                                <p class="mb-0">- Более современные интерактивные элементы</p>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Многостраничный сайт с гибкой архитектурой</li>
+                                    <li>Базовые интерактивные элементы</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="300" data-forever="1300">$300 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="300" data-forever="1300">$300</span>
+                                </h1>
+                            </div>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Многостраничный сайт с уникальным дизайном</li>
+                                    <li>Более современные интерактивные элементы</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
@@ -178,33 +190,33 @@
                         <h4 class="card-title mb-3">Общее для всех Корпоративных сайтов:</h4>
                         <div class="row">
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Настройка безопасности (защита от XSS, CSRF)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Настройка безопасности (защита от XSS, CSRF)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Подключение к корпоративному почтовому серверу</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Подключение к корпоративному почтовому серверу</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация базы данных</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация базы данных</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Реализация системы контроля версий для сайта</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Реализация системы контроля версий для сайта</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация и минификация кода (HTML, CSS, JS)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Использование системы управления контентом (CMS)</p>
                                 </div>
                             </div>
                         </div>
@@ -216,47 +228,53 @@
             <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Start</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Start</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="500" data-forever="2000">$500</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Интернет-магазин с базовым функционалом</p>
-                                <p class="mb-0">- До 50 товаров</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="500" data-forever="2000">$500 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Standard</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Интернет-магазин с расширенным функционалом</p>
-                                <p class="mb-0">- До 200 товаров</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="500" data-forever="3000">$500 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Базовый функционал и шаблон из каталога</li>
+                                    <li>До 50 товаров</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Business</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Standard</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="500" data-forever="2000">$500</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Интернет-магазин с бизнес функционалом</p>
-                                <p class="mb-0">- Неограниченное количество товаров</p>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Расширенный функционал и шаблон под ключ</li>
+                                    <li>До 200 товаров</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="500" data-forever="4000">$500 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="500" data-forever="4000">$500</span>
+                                </h1>
+                            </div>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Бизнес функционал и эксклюзивный шаблон</li>
+                                    <li>Неограниченное количество товаров</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
@@ -264,33 +282,33 @@
                         <h4 class="card-title mb-3">Общее для всех Интернет магазинов:</h4>
                         <div class="row">
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Простая корзина и оформление заказа</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Простая корзина и оформление заказа</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация базы данных для работы с товарами</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация базы данных для работы с товарами</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Интеграция с платежными системами</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Интеграция с платежными системами</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Поддержка масштабируемой архитектуры</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Поддержка масштабируемой архитектуры</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация и минификация кода (HTML, CSS, JS)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Использование системы управления контентом (CMS)</p>
                                 </div>
                             </div>
                         </div>
@@ -302,47 +320,53 @@
             <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Start</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Start</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="400" data-forever="1600">$400</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Базовая доска объявлений</p>
-                                <p class="mb-0">- Возможность размещения объявлений пользователями</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="400" data-forever="1600">$400 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Standard</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Расширенная доска объявлений</p>
-                                <p class="mb-0">- Разработка системы уведомлений и подписок</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="400" data-forever="2200">$400 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Базовая доска объявлений</li>
+                                    <li>Возможность размещения объявлений пользователями</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Business</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Standard</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="400" data-forever="2200">$400</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Бизнес доска объявлений</p>
-                                <p class="mb-0">- Высоконагруженная оптимизация базы данных</p>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Расширенная доска объявлений</li>
+                                    <li>Разработка системы уведомлений и подписок</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="400" data-forever="2500">$400 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="400" data-forever="2500">$400</span>
+                                </h1>
+                            </div>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Бизнес доска объявлений</li>
+                                    <li>Высоконагруженная оптимизация базы данных</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
@@ -350,33 +374,33 @@
                         <h4 class="card-title mb-3">Общее для всех Досок объявлений:</h4>
                         <div class="row">
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Настройка системы модерации контента</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Настройка системы модерации контента</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Интеграция с внешними API (например, геолокация)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Интеграция с внешними API (например, геолокация)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Настройка кэширования для ускорения загрузки</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Настройка кэширования для ускорения загрузки</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Настройка отказоустойчивости и резервного копирования данных</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Настройка отказоустойчивости и резервного копирования данных</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация и минификация кода (HTML, CSS, JS)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Использование системы управления контентом (CMS)</p>
                                 </div>
                             </div>
                         </div>
@@ -388,47 +412,53 @@
             <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Форум</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Форум</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="100" data-forever="1000">$100</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Полный стандартный функционал</p>
-                                <p class="mb-0">- Разработка базовой структуры</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="100" data-forever="1000">$100 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Онлайн курсы</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Расширенный функционал обучения</p>
-                                <p class="mb-0">- Разработка пользовательских ролей и прав доступа</p>
-                            </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="200" data-forever="2000">$200 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Полный стандартный функционал</li>
+                                    <li>Разработка базовой структуры</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <h5 class="mb-0">Опросы и анкеты</h5>
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Онлайн курсы</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="200" data-forever="2000">$200</span>
+                                </h1>
                             </div>
-                            <div class="card-body">
-                                <p class="mb-0">- Разработка расширенного учёта и анализа данных</p>
-                                <p class="mb-0">- Настройка микросервисной архитектуры</p>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Расширенный функционал обучения</li>
+                                    <li>Разработка пользовательских ролей и прав доступа</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
-                            <div class="card-footer">
-                                <span class="price float-start" data-yearly="300" data-forever="3000">$300 / каждый год</span>
-                                <span class="btn btn-outline-success float-end">Заказать</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 animate__animated animate__pulse">
+                        <div class="card card-pricing text-center px-3 mb-4">
+                            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Опросы и анкеты</span>
+                            <div class="bg-transparent card-header pt-4 border-0">
+                                <h1 class="h1 font-weight-normal text-primary text-center mb-0">
+                                    <span class="price" data-yearly="300" data-forever="3000">$300</span>
+                                </h1>
+                            </div>
+                            <div class="card-body pt-0">
+                                <ul class="list-unstyled mb-4">
+                                    <li>Разработка расширенного учёта и анализа данных</li>
+                                    <li>Настройка микросервисной архитектуры</li>
+                                </ul>
+                                <button type="button" class="btn btn-outline-primary mb-3">Choose this plan</button>
                             </div>
                         </div>
                     </div>
@@ -436,33 +466,33 @@
                         <h4 class="card-title mb-3">Общее для всех Платформ:</h4>
                         <div class="row">
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Адаптивный дизайн</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Адаптивный дизайн</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация скорости загрузки</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация скорости загрузки</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Развертывание на хостинге</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Развертывание на хостинге</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Интеграция с внешними сервисами (API, социальные сети)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Интеграция с внешними сервисами (API, социальные сети)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Оптимизация и минификация кода (HTML, CSS, JS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Оптимизация и минификация кода (HTML, CSS, JS)</p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="alert alert-success py-2" role="alert">
-                                    <p class="mb-0">- Использование системы управления контентом (CMS)</p>
+                                <div class="alert alert-primary py-2" role="alert">
+                                    <p class="mb-0">Использование системы управления контентом (CMS)</p>
                                 </div>
                             </div>
                         </div>

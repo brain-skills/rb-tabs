@@ -16,11 +16,11 @@
     width: 160px;
     height: 30px;
     line-height: 24px;
-    background-color: #ccc;
+    background-color: #cfe2ff;
     border-radius: 20px;
     position: relative;
     transition: background-color 0.3s ease;
-    border: 1px solid #999;
+    border: 1px solid #9ec5fe;
 }
 
 .toggle-switch label::before {
@@ -91,7 +91,6 @@ html {
 }
 .price {
     padding: 5px 10px;
-    border: 1px dashed #888;
     border-radius: 4px;
 }
 
@@ -124,4 +123,13 @@ html {
 .container {
     width: calc(100% + 10%);
     max-width: 80%;
+}
+
+.card-pricing.popular {
+    z-index: 1;
+    border: 3px solid #007bff;
+}
+.card-pricing .list-unstyled li {
+    padding: .5rem 0;
+    color: #6c757d;
 }

@@ -5,7 +5,9 @@ let isMonthly = true;
 function updatePrices() {
     const prices = document.querySelectorAll('.price');
     prices.forEach(price => {
-        price.textContent = isMonthly ? `$${price.dataset.yearly} / Yearly` : `$${price.dataset.forever} / Forever`;
+        price.innerHTML = isMonthly 
+            ? `$${price.dataset.yearly}<span class="h6 text-muted ml-2"> / Yearly</span>` 
+            : `$${price.dataset.forever}<span class="h6 text-muted ml-2"> / Forever</span>`;
     });
 }
 
