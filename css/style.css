@@ -70,6 +70,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.card:hover{
+    background: rgb(0 0 0 / 3%);
+}
+
 .card-container {
     display: flex;
     overflow-x: auto;
