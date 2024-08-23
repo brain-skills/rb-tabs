@@ -45,9 +45,6 @@
     background-color: #ccc;
 }
 
-.toggle-switch input:checked + label::before {
-}
-
 .toggle-switch input:checked + label::after {
     color: #fff;
 }
