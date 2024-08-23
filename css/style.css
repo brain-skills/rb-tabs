@@ -137,3 +137,8 @@ html {
     padding: .5rem 0;
     color: #6c757d;
 }
+
+.align-items-start .nav a {
+    max-width: 300px;
+    min-width: 200px;
+}
