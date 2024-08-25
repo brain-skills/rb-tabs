@@ -16,45 +16,58 @@
     width: 160px;
     height: 30px;
     line-height: 24px;
-    background-color: #cfe2ff;
-    border-radius: 20px;
+    background-color: #cfe2ff; /* Цвет фона переключателя */
+    border-radius: 5px;
     position: relative;
     transition: background-color 0.3s ease;
-    border: 1px solid #9ec5fe;
+    border: 1px solid #9ec5fe; /* Цвет обводки переключателя */
+}
+
+.toggle-switch label::before,
+.toggle-switch label::after {
+    font-size: 14px;
+    position: absolute;
+    transition: color 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .toggle-switch label::before {
     content: 'Yearly';
-    font-size: 14px;
-    position: absolute;
     left: 14px;
-    color: #222;
-    transition: color 0.3s ease;
+    color: #222; /* Цвет текста для неактивной кнопки */
 }
 
 .toggle-switch label::after {
     content: 'Forever';
-    font-size: 14px;
-    position: absolute;
     right: 14px;
-    color: #222;
-    transition: color 0.3s ease;
+    color: #222; /* Цвет текста для неактивной кнопки */
 }
 
 .toggle-switch input:checked + label {
-    background-color: #ccc;
+    background-color: #cfe2ff; /* Оставляем фон при активном состоянии */
 }
 
 .toggle-switch input:checked + label::after {
-    color: #fff;
+    color: #0d6efd; /* Цвет текста активной кнопки */
+    font-weight: 600;
+}
+
+.toggle-switch input:not(:checked) + label::before {
+    color: #0d6efd; /* Цвет текста неактивной кнопки */
+    font-weight: 600;
+}
+
+.toggle-switch input:checked + label::before {
+    color: #222; /* Цвет текста неактивной кнопки */
 }
 
 .toggle-switch span {
     position: absolute;
     width: 50%;
     height: 100%;
-    background-color: #fff;
-    border-radius: 20px;
+    border-radius: 5px;
+    border: 1px solid #9ec5fe; /* Цвет обводки переключателя */
     transition: left 0.3s ease;
     left: 0;
 }
@@ -62,6 +75,8 @@
 .toggle-switch input:checked + label span {
     left: 50%;
 }
+
+
 
 html {
     scroll-behavior: smooth;
